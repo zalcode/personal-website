@@ -1,8 +1,8 @@
-import { Github, Linkedin, Mail, MapPin, Globe } from "lucide-react"
-import Image from "next/image"
-import Timeline from "@/components/timeline"
-import TechStack from "@/components/tech-stack"
-import ContactCard from "@/components/contact-card"
+import { Github, Linkedin, Mail, MapPin, Globe } from "lucide-react";
+import Timeline from "@/components/timeline";
+import TechStack from "@/components/tech-stack";
+import ContactCard from "@/components/contact-card";
+import ProfileImage from "@/components/profile-image";
 
 export default function Home() {
   return (
@@ -10,9 +10,14 @@ export default function Home() {
       {/* Header */}
       <header className="w-full bg-white dark:bg-gray-950 shadow-sm">
         <div className="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
-          <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Muhammad Rizal</h1>
+          <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
+            Muhammad Rizal
+          </h1>
           <nav className="flex space-x-4 mt-4 md:mt-0">
-            <a href="#about" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">
+            <a
+              href="#about"
+              className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+            >
               About
             </a>
             <a
@@ -21,10 +26,16 @@ export default function Home() {
             >
               Experience
             </a>
-            <a href="#skills" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">
+            <a
+              href="#skills"
+              className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+            >
               Skills
             </a>
-            <a href="#contact" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">
+            <a
+              href="#contact"
+              className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+            >
               Contact
             </a>
           </nav>
@@ -40,8 +51,16 @@ export default function Home() {
                 Staff Software Engineer
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-lg">
-                Experienced frontend engineer specializing in React, TypeScript, and modern web technologies. Passionate
-                about building scalable applications and optimizing developer experience.
+                Experienced Staff Software Engineer with over 8 years of
+                expertise specializing in frontend development. Demonstrated
+                track record of architecting and implementing scalable web
+                applications, with particular strength in building
+                enterprise-level content management systems and educational
+                platforms. Skilled in developing core web structures,
+                authentication systems, and optimizing application performance.
+                Excels in leading technical initiatives including design system
+                management, CI/CD pipeline optimization, and monorepo
+                architecture.
               </p>
               <div className="flex items-center text-gray-600 dark:text-gray-300 mb-4">
                 <MapPin className="w-5 h-5 mr-2" />
@@ -81,9 +100,7 @@ export default function Home() {
               </div>
             </div>
             <div className="md:w-1/2 flex justify-center">
-              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
-                <Image src="/profile.png" alt="Muhammad Rizal" fill className="object-cover" />
-              </div>
+              <ProfileImage />
             </div>
           </div>
         </div>
@@ -92,7 +109,9 @@ export default function Home() {
       {/* Experience Timeline */}
       <section id="experience" className="py-20 bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-16">Professional Journey</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-16">
+            Professional Journey
+          </h2>
           <Timeline />
         </div>
       </section>
@@ -100,7 +119,9 @@ export default function Home() {
       {/* Skills */}
       <section id="skills" className="py-20 bg-white dark:bg-gray-950">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-16">Technical Skills</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-16">
+            Technical Skills
+          </h2>
           <TechStack />
         </div>
       </section>
@@ -108,14 +129,20 @@ export default function Home() {
       {/* Education */}
       <section className="py-20 bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-16">Education</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-16">
+            Education
+          </h2>
           <div className="max-w-2xl mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
             <div className="p-8">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Bachelor of Informatics</h3>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                Bachelor of Informatics
+              </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 Universitas Jenderal Soedirman, Purwokerto, Indonesia
               </p>
-              <p className="text-gray-500 dark:text-gray-400">September 2012 - September 2016</p>
+              <p className="text-gray-500 dark:text-gray-400">
+                September 2012 - September 2016
+              </p>
             </div>
           </div>
         </div>
@@ -124,7 +151,9 @@ export default function Home() {
       {/* Contact */}
       <section id="contact" className="py-20 bg-white dark:bg-gray-950">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-16">Get In Touch</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-16">
+            Get In Touch
+          </h2>
           <ContactCard />
         </div>
       </section>
@@ -132,9 +161,11 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8">
         <div className="container mx-auto px-4 text-center">
-          <p>© {new Date().getFullYear()} Muhammad Rizal. All rights reserved.</p>
+          <p>
+            © {new Date().getFullYear()} Muhammad Rizal. All rights reserved.
+          </p>
         </div>
       </footer>
     </main>
-  )
+  );
 }
